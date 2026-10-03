@@ -1,0 +1,14 @@
+# No Windows, o Git pode converter fins de linha para CRLF. Arquivos lidos dentro de
+# containers Linux precisam de LF, ou quebram (ex.: "/bin/bash^M: bad interpreter").
+* text=auto
+
+*.sh                 text eol=lf
+docker-compose*.yml  text eol=lf
+.env*                text eol=lf
+deploy/**            text eol=lf
+*.json               text eol=lf
+*.sql                text eol=lf
+
+# Scripts PowerShell no padrão Windows
+*.ps1                text eol=crlf
+*.cmd                text eol=crlf
