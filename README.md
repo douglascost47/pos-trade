@@ -92,8 +92,8 @@ Pré-requisitos: **Docker** (no Windows, Docker Desktop com WSL 2 e pelo menos 4
 **Windows (PowerShell):**
 
 ```powershell
-git clone https://github.com/<seu-usuario>/postrade-lab.git
-cd postrade-lab
+git clone https://github.com/douglascost47/pos-trade.git
+cd pos-trade
 .\scripts\setup-windows.ps1        # diagnóstico da máquina: WSL, Docker, memória, portas
 .\scripts\ambiente.ps1 verificar   # sobe o ambiente e roda o smoke test
 ```
@@ -101,8 +101,8 @@ cd postrade-lab
 **Linux, macOS ou WSL:**
 
 ```bash
-git clone https://github.com/<seu-usuario>/postrade-lab.git
-cd postrade-lab
+git clone https://github.com/douglascost47/pos-trade.git
+cd pos-trade
 ./scripts/check-env.sh
 ```
 
@@ -120,7 +120,7 @@ Guias detalhados: [ambiente local](README-ETAPA0.md) · [passo a passo no Window
 ## Estrutura
 
 ```text
-postrade-lab/
+pos-trade/
 ├─ deploy/
 │  ├─ servicebus/Config.json     # topologia do emulador do Service Bus
 │  └─ sql/                       # criação dos bancos dos serviços
@@ -166,4 +166,4 @@ O projeto é construído em etapas, cada uma terminando com algo funcionando.
 
 **Douglas Costa**, desenvolvedor full-stack .NET com experiência em fintech (crédito consignado e consórcio).
 
-[LinkedIn](https://www.linkedin.com/in/<seu-perfil>) · [GitHub](https://github.com/<seu-usuario>)
+[LinkedIn](https://www.linkedin.com/in/<seu-perfil>) · [GitHub](https://github.com/douglascost47)
