@@ -126,14 +126,16 @@ pos-trade/
 │  └─ sql/                       # criação dos bancos dos serviços
 ├─ scripts/                      # ambiente local (PowerShell e Bash)
 ├─ tools/Etapa0.SmokeTest/       # verificação do ambiente com o SDK do Service Bus
-├─ src/                          # (em construção)
+├─ src/
 │  ├─ Contracts/                 # eventos compartilhados
-│  ├─ Ingestao/                  # Api / Application / Domain / Infrastructure
-│  ├─ Alocacao/
-│  ├─ Custos/
-│  ├─ Liquidacao/
-│  └─ Simulador.B3/
-├─ tests/                        # (em construção)
+│  ├─ Ingestao/                  # Api (REST) / Application / Domain / Infrastructure
+│  ├─ Alocacao/                  # Api (worker) / Application / Domain / Infrastructure
+│  ├─ Custos/                    # mesma divisão
+│  ├─ Liquidacao/                # mesma divisão — saga + conciliação
+│  └─ Simulador.B3/               # gerador de pregão, cenários de falha e arquivo da Clearing
+├─ tests/
+│  ├─ Alocacao.UnitTests/
+│  └─ Alocacao.IntegrationTests/
 └─ docker-compose.yml
 ```
 
