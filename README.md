@@ -146,7 +146,7 @@ O projeto é construído em etapas, cada uma terminando com algo funcionando.
 | Etapa | Conteúdo | Status |
 | --- | --- | --- |
 | 0 | Ambiente local com Docker: SQL Server, emulador do Service Bus, Seq, smoke test | ✅ concluída |
-| 1 | Solução em Clean Architecture | ⏳ |
+| 1 | Solução em Clean Architecture | ✅ concluída |
 | 2 | Domínio e contratos de eventos | ⏳ |
 | 3 | Ingestão com Outbox e OAuth2/JWT | ⏳ |
 | 4 | Consumidores idempotentes e ordem com sessions | ⏳ |

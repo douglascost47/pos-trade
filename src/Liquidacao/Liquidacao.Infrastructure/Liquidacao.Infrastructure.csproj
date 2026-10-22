@@ -9,9 +9,14 @@
   <ItemGroup>
     <PackageReference Include="MassTransit.Azure.ServiceBus.Core" Version="8.5.11" />
     <PackageReference Include="MassTransit.EntityFrameworkCore" Version="8.5.11" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.1" />
     <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.20.1" />
     <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Liquidacao.Application\Liquidacao.Application.csproj" />
+    <ProjectReference Include="..\Liquidacao.Domain\Liquidacao.Domain.csproj" />
   </ItemGroup>
 
 </Project>
