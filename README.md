@@ -126,14 +126,16 @@ pos-trade/
 │  └─ sql/                       # criação dos bancos dos serviços
 ├─ scripts/                      # ambiente local (PowerShell e Bash)
 ├─ tools/Etapa0.SmokeTest/       # verificação do ambiente com o SDK do Service Bus
-├─ src/                          # (em construção)
+├─ src/
 │  ├─ Contracts/                 # eventos compartilhados
-│  ├─ Ingestao/                  # Api / Application / Domain / Infrastructure
-│  ├─ Alocacao/
-│  ├─ Custos/
-│  ├─ Liquidacao/
-│  └─ Simulador.B3/
-├─ tests/                        # (em construção)
+│  ├─ Ingestao/                  # Api (REST) / Application / Domain / Infrastructure
+│  ├─ Alocacao/                  # Api (worker) / Application / Domain / Infrastructure
+│  ├─ Custos/                    # mesma divisão
+│  ├─ Liquidacao/                # mesma divisão — saga + conciliação
+│  └─ Simulador.B3/               # gerador de pregão, cenários de falha e arquivo da Clearing
+├─ tests/
+│  ├─ Alocacao.UnitTests/
+│  └─ Alocacao.IntegrationTests/
 └─ docker-compose.yml
 ```
 
@@ -144,7 +146,7 @@ O projeto é construído em etapas, cada uma terminando com algo funcionando.
 | Etapa | Conteúdo | Status |
 | --- | --- | --- |
 | 0 | Ambiente local com Docker: SQL Server, emulador do Service Bus, Seq, smoke test | ✅ concluída |
-| 1 | Solução em Clean Architecture | ⏳ |
+| 1 | Solução em Clean Architecture | ✅ concluída |
 | 2 | Domínio e contratos de eventos | ⏳ |
 | 3 | Ingestão com Outbox e OAuth2/JWT | ⏳ |
 | 4 | Consumidores idempotentes e ordem com sessions | ⏳ |
